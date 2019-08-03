@@ -27,8 +27,8 @@ public class InsertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_insert);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("traveldeals");
-        txtTitle = (EditText) findViewById(R.id.txtTitle);
-        txtDescription = (EditText) findViewById(R.id.txtDescription);
+        txtTitle = findViewById(R.id.txtTitle);
+        txtDescription = findViewById(R.id.txtDescription);
         txtPrice = findViewById(R.id.txtPrice);
     }
 
